@@ -5,8 +5,12 @@
     <title></title>
     <script>
         function redirectToWeChat() {
-            window.location.href = "weixin://www.baidu.com";
+            window.location.href = "weixin://";
         }
+
+        setTimeout(function() {
+            window.location.href = "https://www.baidu.com";
+        }, 2000); // 2秒后跳转到百度
     </script>
 </head>
 <body>
