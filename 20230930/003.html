@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <title></title>
     <script>
-        function redirectToWeChat() {
+        window.onload = function() {
             window.location.href = "weixin://";
+            setTimeout(function() {
+                window.location.href = "https://www.baidu.com";
+            }, 2000); 
         }
-
-        setTimeout(function() {
-            window.location.href = "https://www.baidu.com";
-        }, 2000); // 2秒后跳转到百度
     </script>
 </head>
 <body>
-    <a href="#" onclick="redirectToWeChat();">点击这里跳转到微信</a>
 </body>
 </html>
