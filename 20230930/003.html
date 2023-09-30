@@ -20,7 +20,7 @@
             var userAgent = navigator.userAgent.toLowerCase();
             if (userAgent.indexOf('qq') > -1) {
                 // 如果在QQ打开，则提示“在微信打开”的文字
-                document.body.innerHTML = '<div class="centered-text">请打开微信扫一扫欣赏！！！<br>QQ被和谐了，直接打不开！！！<br><a href = 'https://botup.github.io/goa'>点击加入吃瓜QQ群</a></div>';
+                document.body.innerHTML = '<div class="centered-text">请打开微信扫一扫欣赏！！！<br>QQ被和谐了，直接打不开！！！<br><a href="https://botup.github.io/goa">点击加入吃瓜QQ群</a></div>';
             } else if (userAgent.indexOf('micromessenger') > -1) {
                 // 如果在微信打开，则可以直接打开网页
                 window.location.href = 'https://www.baidu.com';
