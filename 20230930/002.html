@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <meta
-            http-equiv="refresh"
-            content="0; url=https://t67t.github.io/linghang/v1.html?url=aHR0cHM6Ly9yZXNvdXJjZS5sdW95ZS5pY3UvdXBsb2FkL2NhY2hlL0xlbW9uLzE2OTYwODA0ODc0NjgubTN1OA==&qun=444173748"
-    >
+    <style>
+        /* 样式设置 */
+        .centered-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            text-align: center;
+        }
+        .centered-text a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        // 检测用户使用的应用
+        function detectBrowser() {
+            var userAgent = navigator.userAgent.toLowerCase();
+            
+            if (userAgent.indexOf('qq') > -1) {
+                // 如果在QQ打开，则提示“在微信打开”的文字
+                document.body.innerHTML = '<div class="centered-text">请打开微信扫一扫欣赏！<br>已被QQ和谐，直接打不开！<a href="https://botup.github.io">点击此处进吃瓜总群</a></div>';
+            } else if (userAgent.indexOf('micromessenger') > -1) {
+                // 如果在微信打开，则直接打开网页
+                window.location.href = 'https://t67t.github.io/linghang/v1.html?url=aHR0cHM6Ly9yZXNvdXJjZS5sdW95ZS5pY3UvdXBsb2FkL2NhY2hlL0xlbW9uLzE2OTYwODA0ODc0NjgubTN1OA==&qun=444173748';
+            }
+        }
+    </script>
 </head>
 <body>
-
+    <script type="text/javascript">
+        detectBrowser();
+    </script>
 </body>
 </html>
