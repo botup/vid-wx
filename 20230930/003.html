@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <meta
-            http-equiv="refresh"
-            content="0; url=https://www.baidu.com"
-    >
+    <script>
+        function redirectToWeChat() {
+            window.location.href = "weixin://www.baidu.com";
+        }
+    </script>
 </head>
 <body>
-
+    <a href="#" onclick="redirectToWeChat();">点击这里跳转到微信</a>
 </body>
 </html>
