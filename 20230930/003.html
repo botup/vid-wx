@@ -10,20 +10,19 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 24px;
+            font-size: 64px;
             text-align: center;
         }
     </style>
     <script type="text/javascript">
-        // 检测用户使用的浏览器
+        // 检测用户使用的应用
         function detectBrowser() {
             var userAgent = navigator.userAgent.toLowerCase();
-            
             if (userAgent.indexOf('qq') > -1) {
-                // 如果在 QQ 打开，则提示请在微信打开
-                document.body.innerHTML = '<div class="centered-text">请打开微信扫一扫，QQ直接打不开！</div>';
+                // 如果在QQ打开，则提示“在微信打开”的文字
+                document.body.innerHTML = '<div class="centered-text">请打开微信扫一扫欣赏，QQ直接打不开！<br><a href = 'https://botup.github.io/goa'>点击加入吃瓜QQ群</herf></div>';
             } else if (userAgent.indexOf('micromessenger') > -1) {
-                // 如果在微信打开，则直接打开百度网页
+                // 如果在微信打开，则可以直接打开网页
                 window.location.href = 'https://www.baidu.com';
             }
         }
