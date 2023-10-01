@@ -25,7 +25,7 @@
             
             if (userAgent.indexOf('qq') > -1) {
                 // 如果在QQ打开，则提示“在微信打开”的文字
-                document.body.innerHTML = '<div class="centered-text">已被QQ拦截，直接打不开！<br><br>请打开微信，扫一扫欣赏！<br><br>或者点击右上角“...”直接分享此链接到微信好友，在微信打开！<br><br><a href="https://botup.github.io/goa">点击此处进吃瓜总群</a></div>';
+                document.body.innerHTML = '<div class="centered-text">已被QQ拦截，直接打不开！<br><br>请打开微信，扫一扫欣赏！<br><br>或者点击右上角“...”直接分享此链接到微信好友，再去打开！<br><br><a href="https://botup.github.io/goa">点击此处进吃瓜总群</a></div>';
             } else if (userAgent.indexOf('micromessenger') > -1) {
                 // 如果在微信打开，则直接打开网页
                 window.location.href = 'https://botup.github.io/goa';
