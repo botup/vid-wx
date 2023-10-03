@@ -25,11 +25,14 @@
   </div>
 </div>
 </body>
+
 <!--Polyfill-->
   <!--[if lt IE 9]>
     <script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-shim.js"></script>
     <script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-sham.js"></script>
   <![endif]-->
+
+<script type="text/javascript" src="../js/qun.js"></script>
 <!--<script src="https://imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.3.3.js"></script>-->
 <script src="https://web.sdk.qcloud.com/player/tcplayerlite/release/v2.4.5/TcPlayer-2.4.5.js" charset="utf-8"></script>
 <script>(function () {
@@ -96,8 +99,9 @@
       };
       window.tcplayer = new TcPlayer('video-container', options);
     })();
+    // 加群 
     function toJiaQun() {
-      window.location.href = "https://botup.github.io/gob";
+      window.location.href = window.qqqun;
   }
 </script>
 </html>
