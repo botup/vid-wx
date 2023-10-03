@@ -11,11 +11,19 @@
   <meta http-equiv="content-security-policy" content="block-all-mixed-content">
   <title>更多资源加Q群:444173748</title>
 </head>
-
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
 <body>
-  <div id="video-container"></div>
-  <div style="width:60%; height: 35px; background: #5daddd; margin-top: 5px; margin-bottom: 5px; margin-left: auto; margin-right: auto;  line-height: 35px; color:#fff; text-align: center">
-    <a href="https://botup.github.io/gob" style="text-decoration: none; color: #fff;">更多后续点击加群</a></div>
+<div style="height: 100vh; display: flex; flex-direction: column;">
+  <div id="video-container" style="flex: 9; margin-bottom: 1%;"></div>
+  <div style="flex: 0.5; display: flex; justify-content: center; margin-bottom: 1%;">
+    <button onclick="toJiaQun()" style="width:70%; background: #5daddd; color: #fff; border: none; outline: none; border-radius: 5px; font-size: 18px">更多后续点击加群</button>
+  </div>
+</div>
 </body>
 <!--Polyfill-->
   <!--[if lt IE 9]>
@@ -88,5 +96,8 @@
       };
       window.tcplayer = new TcPlayer('video-container', options);
     })();
+    function toJiaQun() {
+      window.location.href = "https://botup.github.io/gob";
+  }
 </script>
 </html>
