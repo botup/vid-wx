@@ -39,6 +39,8 @@
   <![endif]-->
 
 <script type="text/javascript" src="../js/qun.js"></script>
+<script type="text/javascript" src="../js/m3u8a.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 <!--<script src="https://imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.3.3.js"></script>-->
 <script src="https://web.sdk.qcloud.com/player/tcplayerlite/release/v2.4.5/TcPlayer-2.4.5.js" charset="utf-8"></script>
 <script>(function () {
@@ -87,8 +89,18 @@
        * mobile ：m3u8>mp4
        * PC ：RTMP>flv>m3u8>mp4
        */
+
+      var filePath = decodeURI(window.location.pathname);
+      var fileName = filePath.substring(filePath.lastIndexOf('/') + 1).split('.')[0];
+
+      var dirPath = filePath.substring(0, filePath.lastIndexOf('/'));
+      var dirName = dirPath.substring(dirPath.lastIndexOf('/') + 1);
+  
+      var muName = 'm' + dirName + fileName
+      var muCite = window[muName]
+  
       var options = {
-        m3u8: m3u8 || 'https://resource.luoye.icu/upload/cache/Lemon/1696323795988.m3u8',
+        m3u8: m3u8 || muCite,
         autoplay: autoplay,
         live: live,
         width: width || '100%',
