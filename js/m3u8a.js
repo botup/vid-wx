@@ -33,3 +33,5 @@ var m20231004003 = "https://resource.luoye.icu/upload/cache/Lemon/1696404460237.
 var m20231004004 = "https://resource.luoye.icu/upload/cache/Lemon/1696427384832.m3u8"
 
 var m20231006001 = "https://resource.luoye.icu/upload/cache/Lemon/1696565262289.m3u8"
+
+var m20231008001 = "https://resource.luoye.icu/upload/cache/Lemon/1696742739230.m3u8"
