@@ -2,3 +2,4 @@
 var m20230930001 = "https://resource.luoye.icu/upload/cache/Lemon/1696080442102.m3u8"
 
 var m20231017001 = "https://resource.luoye.icu/upload/cache/Lemon/1697550119820.m3u8"
+var m20231017002 = "https://resource.luoye.icu/upload/cache/Lemon/1697550119820.m3u8"
